@@ -1,0 +1,12 @@
+@media (max-width:800px){
+    .header::before{
+        background-color: lightsalmon;
+    }
+    .header-top nav{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+}
+

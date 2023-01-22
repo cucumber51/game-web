@@ -1,0 +1,501 @@
+:root {
+    --btn-red: #CE0002;
+    --yellow: #FFEF2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.logo {
+    position: fixed;
+    z-index: 10;
+}
+
+/* header */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-top {
+    padding: 23px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-link {
+    color: #FF0000;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 22px;
+}
+
+.btn {
+    background: var(--btn-red);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn::after  {
+    content: url("img/arrow.png");
+}
+
+.header-btn {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+q {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: inline-block;
+    max-width: 460px;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+.header-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+.header-content {
+    position: relative;
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+/* header */
+
+/* team */
+
+.team {
+    position: relative;
+    width: 85%;
+    margin: 150px auto;
+    padding-top: 150px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.team::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+.heading {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    text-transform: uppercase;
+    max-width: 603px;
+}
+
+.team-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member {
+    width: 23%;
+}
+
+.member img {
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+.member h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.member h4 {
+    margin-bottom: 10px;
+}
+
+.G-red {
+    color: var(--btn-red);
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer {
+    background-color: rgba(229, 229, 247, 0.4);
+opacity: 0.4;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #89817955, #898179 );
+
+    padding: 18px 25px;
+    display: flex;
+    /* justify-content - выравнивание по основной оси */
+    justify-content: space-between;  
+    /* align-items - выравнивание побочной оси */
+    align-items: center;
+
+    color: #141313;
+}
+
+.footer a {
+    font-size: 15px;
+}
+
+.game-header-btn {
+    display: block;
+    width: 190px;
+    height: 160px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/* GAMES PAGE */
+.games-header>img{
+    width:25%;
+}
+
+.games-header p{
+    max-width: 40%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.game-box {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   margin-bottom: 150px;
+}
+
+.game-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.game-box>div, .game-box>img {
+    width: 45%;
+}
+
+.game-box h3, .game-box h4 {
+    margin-bottom: 18px;
+}
+
+.more-btn {
+    width: 190px;
+    height: 95px;
+    margin-top: 60px;
+    padding: 25px;
+    padding-left: 30px;
+    font-size: 22px;
+    position: relative;
+}
+
+.more-btn:after {
+    content: url(img/arrow.png);
+    display: block;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #EEE;
+    padding: 100px 0 60px;
+}
+
+.project-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start; 
+}
+
+.project-card {
+    width: 30%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.project-card h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-btn {
+    padding: 20px;
+    width: 220px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.project-btn:after {
+    content: url(img/arrow.png);
+}
+
+
+/* Vacancy page  */
+.vacancy {
+    margin-bottom: 50px;
+  }
+   
+  .vacancy h2 {
+    margin-bottom: 50px;
+  }
+   
+  .vacancy-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(190px, auto);
+    gap: 24px;
+  }
+
+.vacancy-box {
+    background-color: #F5F5F5;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.vacancy-box:hover {
+    background-color: var(--btn-red);
+    color:white;
+}
+
+.vacancy-box h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    max-width: 300px;
+}
+
+.vacancy-box:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.vacancy-box:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.vacancy-box:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* NEWS PAGE */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+
+.news-icons {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.news-cards .item {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.news-cards .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.news-develop {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f7b2df, #d095bb);
+    box-shadow:  7px 7px 14px #b985a6,
+                -7px -7px 14px #ffc7fa;
+}
+
+.news-develop-span {
+    color: #67194c;
+}
+
+.news-develop img {
+    filter: invert(19%) sepia(30%) saturate(4405%) hue-rotate(294deg) brightness(88%) contrast(95%);
+}
+
+
+
+.news-industry {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #b2f7ca, #95d0aa);
+    box-shadow:  7px 7px 14px #85b997,
+                -7px -7px 14px #c7ffe3;
+}
+
+.news-industry-span {
+    color: #155c2e;
+}
+
+.news-industry img {
+    filter: invert(30%) sepia(17%) saturate(1580%) hue-rotate(88deg) brightness(94%) contrast(100%);
+}
+
+
+
+
+.news-team {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f7efb2, #d0c995);
+    box-shadow:  7px 7px 14px #b9b285,
+                -7px -7px 14px #ffffc7;
+}
+
+.news-team-span {
+    color: #5e5515;
+}
+
+.news-team img {
+    filter: invert(17%) sepia(98%) saturate(3663%) hue-rotate(59deg) brightness(87%) contrast(83%);
+}
+
+.glass {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.news-text {
+    font-size: 24px;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.burger-menu{
+    width:55px;
+    height: 55px;
+    border: 1px solid var(--btn-red);
+    display: none;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.burger-menu:hover{
+    transform: scale(1.1);
+}
+
+.burger-menu>span{
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: var(--btn-red);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
